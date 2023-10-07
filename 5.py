@@ -9,3 +9,10 @@ for n in range(1, 1000):
     if R(n) > 151:
         print(R(n))
         break
+
+from itertools import *
+k = 0
+for i in product('012345', repeat=5):
+    if i[0] != '0' and i[-1] == '3':
+        k += 1
+print(k)
