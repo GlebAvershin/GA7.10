@@ -13,3 +13,10 @@ def G(n):
     if n >= 3:
         return G(n + 1) - n
 print(G(3))
+
+def H(n):
+    if n == 1:
+        return n
+    if n >= 3:
+        return H(n + 1) - n
+print(H(3))
