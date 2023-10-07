@@ -7,3 +7,8 @@ for a1,a2,a3,a4 in product([0,1], repeat=4):
         for p in permutations('xyzw'):
             if [f(**dict(zip(p, r))) for r in table] == [0,0,0]:
                 print(p)
+k = 0
+for i in range(1, 1000):
+    if i % 23 == 0:
+        k += 1
+print(k)
