@@ -7,3 +7,10 @@ for i in range(len(nums)):
             low = j
     nums[i], nums[low] = nums[low], nums[i]
 print(nums)
+
+def R(n):
+    if n == 1:
+        return n
+    if n >= 3:
+        return F(n + 1)
+print(R(3))
